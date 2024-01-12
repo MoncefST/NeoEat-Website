@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #F2F2F2;
 }
 
 .navbar {
@@ -13,8 +14,8 @@ body {
 }
 
 .logo img {
-    width: 3cm;
-    height: 1.5cm;
+    width: 4.7cm;
+    height: 1.7cm;
     margin-left: 2cm;
 }
 
@@ -27,15 +28,15 @@ body {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
 .reserve-btn {
     background-color: #FFB039;
     padding: 10px 20px;
     border-radius: 10px;
+    color: #4A305A;
 }
-
-/* ... (code précédent) */
 
 .burger-menu {
     display: none;
@@ -47,6 +48,10 @@ body {
     height: 3px;
     background-color: white;
     margin: 6px 0;
+}
+
+.nav-link:hover {
+    color: #87CEEB;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,4 +78,89 @@ body {
     .burger-menu {
         display: block;
     }
+}
+
+.content {
+    max-width: 1380px;
+    margin: 15px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.chef-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.chef-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chef {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.chef img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.chef h3 {
+    margin-top: 10px;
+    color: #4A305A;
+}
+
+.chef p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.voir-plus {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.voir-plus a.voir-plus-btn {
+    display: inline-block;
+    background-color: #FFB039;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #4A305A;
+    text-align: center;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.welcome-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome-video {
+    width: 90%; /* largeur de la fenêtre de la vidéo */
+    max-height: 400px; 
+    margin-bottom: 20px;
 }

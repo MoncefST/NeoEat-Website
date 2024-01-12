@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <img src="../img/LogoNeoEat.png" alt="Neo Eat Logo">
+            <img src="../img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
         </div>
         <nav class="nav-links">
             <a href="#" class="nav-link">Accueil</a>
@@ -18,6 +18,8 @@
             <a href="#" class="nav-link">Contact</a>
             <a href="#" class="nav-link reserve-btn">Réserver une table</a>
         </nav>
+
+        <!-- BARRE DU MENU BURGER -->
         <div class="burger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -25,7 +27,53 @@
         </div>
     </header>
 
-    <!-- Reste du contenu de votre site va ici -->
+    <div class="content">
+        <!-- Vidéo et message de bienvenue -->
+        <section class="welcome-section">
+            <h1>Bienvenue chez Neo Eat !</h1>
+            <video controls autoplay class="welcome-video">
+                <source src="../video/VideoExplicationConcept.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas les vidéos.
+            </video>
+        </section>
+
+        <!-- Section des chefs -->
+        <section class="chef-section">
+            <h2>Nos créateurs culinaires</h2>
+            <div class="chef-container">
+                <div class="chef">
+                    <h3>Philippe Etchebest</h3>
+                    <img src="../img/ChefCuisto/Etchebest.png" alt="Chef Philippe Etchebest">
+                    <p>Rencontrez notre chef étoilé, Philippe Etchebest, passionné de cuisine depuis toujours.</p>
+                </div>
+
+                <div class="chef">
+                    <h3>Cyril Lignac</h3>
+                    <img src="../img/ChefCuisto/CyrilLignac.jpg" alt="Chef Cyril Lignac">
+                    <p>Découvrez les créations innovantes de notre chef renommé, Cyril Lignac.</p>
+                </div>
+
+                <div class="chef">
+                    <h3>Gordon Ramsay</h3>
+                    <img src="../img/ChefCuisto/GordonRamsay.jpg" alt="Chef Gordon Ramsay">
+                    <p>Savourez des plats exquis préparés par le célèbre chef Gordon Ramsay.</p>
+                </div>
+
+                <div class="chef">
+                    <h3>Thierry Marx</h3>
+                    <img src="../img/ChefCuisto/ThierryMarx.jpg" alt="Chef Thierry Marx">
+                    <p>Explorez le monde culinaire unique conçu par le chef étoilé Thierry Marx.</p>
+                </div>
+            </div>
+            <div class="voir-plus">
+                <a href="#" class="voir-plus-btn">Voir plus de chefs</a>
+            </div>
+        </section>
+
+        <section class="robot-section">
+            <!-- Ajoutez la même structure pour les photos des robots etc.......-->
+        </section>
+    </div>
 
     <script src="../js/script.js"></script>
 </body>
