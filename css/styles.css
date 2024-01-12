@@ -1,8 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    padding-top: 80px;
     font-family: 'Arial', sans-serif;
     background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -11,12 +21,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Assure que l'en-tête reste au-dessus du contenu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour le style */    
 }
+
 
 .logo img {
     width: 4.7cm;
     height: 1.7cm;
-    margin-left: 2cm;
+    margin-left: 1cm;
 }
 
 .nav-links {
@@ -163,4 +179,62 @@ p {
     width: 90%; /* largeur de la fenêtre de la vidéo */
     max-height: 400px; 
     margin-bottom: 20px;
+}
+
+.plats-populaires {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.plat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plat {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.plat img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plat h3 {
+    margin-top: 10px;
+    color: #4A305A;
+}
+
+.plat p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4A305A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollTopBtn span {
+    margin-right: 5px;
+    font-size: 18px;
 }
