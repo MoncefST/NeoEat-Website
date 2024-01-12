@@ -4,94 +4,73 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-header {
+.navbar {
     background-color: #4A305A;
-    color: #fff;
-    padding: 15px 0;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo {
-    display: flex;
-    align-items: center; /* Centrer verticalement le contenu du logo */
+.logo img {
+    width: 3cm;
+    height: 1.5cm;
+    margin-left: 2cm;
 }
 
-#logo img {
-    max-width: 80px; /* Ajuste la taille du logo à 80 pixels (ou une valeur qui convient) */
-    height: auto;
-    margin-top: 5px;
-}
-
-nav {
+.nav-links {
     display: flex;
     align-items: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-left: auto; /* Pour déplacer vers la droite */
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav a {
+.nav-link {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    margin: 0 15px;
 }
 
-#menu-icon {
+.reserve-btn {
+    background-color: #FFB039;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* ... (code précédent) */
+
+.burger-menu {
     display: none;
-    font-size: 24px;
     cursor: pointer;
 }
 
-#reserve-button {
-    background-color: orange;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-left: 20px;
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
+    .nav-links {
         display: none;
-        width: 100%;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #333;
+        width: 100%;
+        background-color: #4A305A;
+        z-index: 1;
     }
 
-    nav ul.show {
+    .nav-links.show {
         display: flex;
-        flex-direction: column;
     }
 
-    nav ul li {
-        margin: 0;
-        margin-bottom: 10px;
+    .nav-link {
+        margin: 10px 0;
     }
 
-    #menu-icon {
+    .burger-menu {
         display: block;
-    }
-
-    #reserve-button {
-        margin: 20px 0;
     }
 }

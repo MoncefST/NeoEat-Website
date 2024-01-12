@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuIcon = document.getElementById('menu-icon');
-    const navList = document.querySelector('nav ul');
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
 
-    menuIcon.addEventListener('click', function () {
-        navList.classList.toggle('show');
+    burgerMenu.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
     });
 });
