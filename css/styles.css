@@ -176,7 +176,7 @@ p {
 }
 
 .welcome-video {
-    width: 90%; /* largeur de la fenêtre de la vidéo */
+    width: 80%; /* largeur de la fenêtre de la vidéo */
     max-height: 400px; 
     margin-bottom: 20px;
 }
@@ -237,4 +237,53 @@ p {
 #scrollTopBtn span {
     margin-right: 5px;
     font-size: 18px;
+}
+
+
+.container {
+    position: relative;
+    margin-bottom: 120px; 
+}
+
+.footer {
+    background-color: #4A305A;
+    color: white;
+    padding: 20px; /*hauteur du pied de page*/
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section p {
+    color:white;
+}
+
+.footer-section img {
+    width: 30px; /* taille logo*/
+    height: 30px;
+    margin-right: 5px; /* Ajoute de l'espace entre les logos et les noms */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-signature {
+    margin-top: 20px;
+}
+
+.footer-signature p {
+    color:white;
+}
+
+.footer-signature img {
+    width: 200px; /* taille du logo */
+    margin-bottom: 10px;
 }
