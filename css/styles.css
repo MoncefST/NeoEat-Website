@@ -170,12 +170,12 @@ p {
     line-height: 1.5;
 }
 
-.welcome-section {
+.bienvenue-section {
     margin-top: 20px;
     text-align: center;
 }
 
-.welcome-video {
+.bienvenue-video {
     width: 80%; /* largeur de la fenêtre de la vidéo */
     max-height: 400px; 
     margin-bottom: 20px;
@@ -226,17 +226,12 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4A305A;
-    color: white;
+    background-color: #FFB039;
     border: none;
     border-radius: 5px;
+    font-size: 25px;
     padding: 10px;
     cursor: pointer;
-}
-
-#scrollTopBtn span {
-    margin-right: 5px;
-    font-size: 18px;
 }
 
 
@@ -256,6 +251,23 @@ p {
     display: flex;
     justify-content: space-around;
 }
+
+.footer-section.horizontally-aligned {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 30px; 
+    height: 30px; 
+}
+
 
 .footer-section {
     flex: 1;
@@ -286,4 +298,56 @@ p {
 .footer-signature img {
     width: 200px; /* taille du logo */
     margin-bottom: 10px;
+}
+
+.client-reviews {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.client-review-container {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.client-review {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.client-review img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.client-review p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.client-review h3 {
+    margin-top: 10px;
+    color: #4A305A;
+}
+
+.evaluation {
+    color: #FFB039;
+    font-size: 18px;
+}
+
+.restaurant-tables {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px; 
 }
