@@ -239,11 +239,10 @@ p {
     position: relative;
     margin-bottom: 120px; 
 }
-
 .footer {
-    background-color: #4A305A;
+    background-color: #4A305A; /* Couleur de fond du pied de page */
     color: white;
-    padding: 20px; /*hauteur du pied de page*/
+    padding: 20px; /* Hauteur du pied de page */
     text-align: center;
 }
 
@@ -252,53 +251,50 @@ p {
     justify-content: space-around;
 }
 
-.footer-section.horizontally-aligned {
-    display: flex;
-    align-items: center;
+.footer-section {
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-signature {
+    order: 1;
 }
 
 .social-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center; /* Centrez les icônes sur les petits écrans */
+    margin-top: 10px; /* Ajoutez une marge pour séparer les icônes du texte */
 }
 
 .social-icon img {
-    width: 30px; 
-    height: 30px; 
-}
-
-
-.footer-section {
-    flex: 1;
-}
-
-.footer-section p {
-    color:white;
-}
-
-.footer-section img {
-    width: 30px; /* taille logo*/
+    width: 30px;
     height: 30px;
-    margin-right: 5px; /* Ajoute de l'espace entre les logos et les noms */
 }
 
 .footer-section h3 {
     margin-bottom: 10px;
 }
 
-.footer-signature {
-    margin-top: 20px;
+.footer-section img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 
-.footer-signature p {
-    color:white;
+/* Style pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 1;
+    }
 }
 
-.footer-signature img {
-    width: 200px; /* taille du logo */
-    margin-bottom: 10px;
-}
+
+
 
 .client-reviews {
     text-align: center;

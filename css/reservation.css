@@ -1,0 +1,50 @@
+/* Ajoutez les styles nécessaires pour le formulaire de réservation */
+.content {
+    text-align: center;
+}
+
+.reservation-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-form button {
+    margin-top: 10px; /* Ajoute un espace en haut du bouton */
+    background-color: #FFB039;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #E59800;
+}
+
+.reservation-form {
+    text-align: center; /* Centre le formulaire */
+}
+/* Ajoutez les styles nécessaires pour le formulaire de réservation */

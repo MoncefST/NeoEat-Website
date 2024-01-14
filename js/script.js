@@ -1,3 +1,4 @@
+// Menu burger
 document.addEventListener('DOMContentLoaded', function () {
     const burgerMenu = document.querySelector('.burger-menu');
     const navLinks = document.querySelector('.nav-links');
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Scroll jusqu'en au de la page
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -14,7 +16,7 @@ function scrollToTop() {
     });
 }
 
-// Afficher ou masquer le bouton en fonction de la position de défilement
+// Afficher ou masquer le bouton de scroll en fonction de la position dans la page
 document.addEventListener('scroll', function () {
     const scrollTopBtn = document.getElementById('scrollTopBtn');
     if (window.scrollY > 200) {
@@ -23,3 +25,4 @@ document.addEventListener('scroll', function () {
         scrollTopBtn.style.display = 'none';
     }
 });
+
