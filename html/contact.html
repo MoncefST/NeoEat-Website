@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact - Neo Eat</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="../img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="../html/index.html" class="nav-link">Accueil</a>
+            <a href="#" class="nav-link">Menu</a>
+            <a href="#" class="nav-link">À propos</a>
+            <a href="../html/contact.html" class="nav-link">Contact</a>
+            <a href="#" class="nav-link reserve-btn">Réserver une table</a>
+        </nav>
+
+        <!-- BARRE DU MENU BURGER -->
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div class="content">
+        <section class="contact-section">
+            <h1>Nous Contacter</h1>
+            <p>Pour toute question ou demande, n'hésitez pas à nous contacter :</p>
+
+            <!-- Formulaire de contact -->
+            <form action="https://dwarves.iut-fbleau.fr/requete.php" method="post" class="contact-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+
+            <!-- Coordonnées -->
+            <div class="contact-details">
+                <h2>Coordonnées</h2>
+                <p>Téléphone : <a href="tel:+33175489632">+33 01 75 48 96 32</a></p>
+                <p>Email : <a href="mailto:neoeat.sav@gmail.com">neoeat.sav@gmail.com</a></p>
+                <p>Adresse : <a href="https://www.google.com/maps?q=Champ+de+Mars,+5+Av.+Anatole+France,+75007+Paris" target="_blank">Champ de Mars, 5 Av. Anatole France, 75007 Paris</a></p>
+            </div>
+
+            <!-- Carte avec l'emplacement du restaurant -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.479389187089!2d2.287111221308951!3d48.855924991305976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670209c1c4807%3A0x9702c4c43d00821e!2sChamp-de-Mars!5e0!3m2!1sfr!2sfr!4v1705238566543!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <!-- Ajoutez ici les liens vers les différentes sections du site -->
+            </div>
+            <div class="footer-section">
+                <h3>Mentions légales</h3>
+                <!-- Ajoutez ici les informations légales nécessaires -->
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email : <a href="mailto:neoeat.sav@gmail.com">neoeat.sav@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33175489632">+33 01 75 48 96 32</a></p>
+            </div>
+            <div class="footer-section horizontally-aligned">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <p>
+                        <a href="https://www.instagram.com/neoeat75/" target="_blank" class="social-icon">
+                            <img src="../img/RéseauxSociaux/Instagram.png" alt="Instagram">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/neoeat75/" target="_blank" class="social-icon">
+                            <img src="../img/RéseauxSociaux/Facebook.png" alt="Facebook">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.X.com/neoeat75/" target="_blank" class="social-icon">
+                            <img src="../img/RéseauxSociaux/X.png" alt="X">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCNSi53sTJ7LYqgonJ4CfCCQ" target="_blank" class="social-icon">
+                            <img src="../img/RéseauxSociaux/Youtube.png" alt="Youtube">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.TripAdvisor.com/neoeat/" target="_blank" class="social-icon">
+                            <img src="../img/RéseauxSociaux/Tripadvisor.png" alt="TripAdvisor">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="footer-signature">
+            <img src="../img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
+            <p>&copy; 2024 Neo Eat. Tous droits réservés.</p>
+            <p>Une bouchée dans le futur.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        <span>&#x1F680;</span>
+    </button>
+</body>
+</html>
