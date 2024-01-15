@@ -1,0 +1,21 @@
+.about-section {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.robot-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+.nos-chefs-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chef-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chef-item img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.chef-item h2 {
+    color: #4A305A;
+}
+
+.chef-item p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
