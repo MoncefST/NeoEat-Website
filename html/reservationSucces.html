@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/reservation.css">
-    <title>Réserver une table - Neo Eat</title>
+    <link rel="stylesheet" href="../css/ReservationSuccess.css">
+    <title>Réservation réussie - Neo Eat</title>
 </head>
 <body>
     <header class="navbar">
@@ -37,42 +37,10 @@
     </header>
 
     <div class="content">
-        <section class="reservation-section">
-            <h1>Réserver une table</h1>
-            <p>Choisissez une date et une heure parmi les disponibilités ci-dessous pour réserver une table.</p>
-
-            <!-- Formulaire de réservation avec sélecteur de plage horaire -->
-            <form action="../php/send_confirmation_email.php" method="post" class="reservation-form" onsubmit="showReservationConfirmation()">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="phone">Téléphone :</label>
-                <input type="tel" id="phone" name="phone" required>
-            
-                <label for="date">Date :</label>
-                <input type="date" id="date" name="date" required>
-            
-                <label for="time">Heure :</label>
-                <select id="time" name="time" required>
-                    <option value="" disabled selected>Choisissez une heure</option>
-                    <option value="18:00">11:30</option>
-                    <option value="19:00">12:00</option>
-                    <option value="20:00">13:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="18:00">21:00</option>
-                </select>
-            
-                <label for="guests">Nombre de convives :</label>
-                <input type="number" id="guests" name="guests" min="1" required>
-            
-                <button type="submit">Réserver</button>
-            </form>
-            
+        <section class="reservation-successful-section">
+            <h1>Réservation réussie</h1>
+            <p>Merci pour votre réservation ! Votre table a bien été réservée et un mail de confirmation vous as été envoyé.</p>
+            <a href="index.html" class="home-button">Retourner à l'accueil</a>
         </section>
     </div>
 
@@ -128,7 +96,6 @@
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
     <button id="scrollTopBtn" onclick="scrollToTop()">
         <span>&#x1F680;</span>
     </button>
