@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/reservation.css">
-    <title>Réserver une table - Neo Eat</title>
+    <link rel="stylesheet" href="../css/faq.css">
+    <title>FAQ - Neo Eat</title>
 </head>
 <body>
     <header class="navbar">
@@ -37,45 +37,58 @@
     </header>
 
     <div class="content">
-        <section class="reservation-section">
-            <h1>Réserver une table</h1>
-            <p>Choisissez une date et une heure parmi les disponibilités ci-dessous pour réserver une table.</p>
+        <section class="faq-section">
+            <h1>Foire aux questions</h1>
 
-            <!-- Formulaire de réservation avec sélecteur de plage horaire -->
-            <form action="https://dwarves.iut-fbleau.fr/requete.php" method="post" class="reservation-form" onsubmit="showReservationConfirmation()">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
+            <div class="faq-item">
+                <button class="faq-question-btn">1. Question 1 ?</button>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar libero vel ligula ultrices, eget accumsan velit congue.</p>
+                </div>
+            </div>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+            <div class="faq-item">
+                <button class="faq-question-btn">2. Question 2 ?</button>
+                <div class="faq-answer">
+                    <p>Maecenas eu lectus vitae nulla consectetur fermentum. Aliquam auctor, elit vel tincidunt molestie, purus elit placerat ex.</p>
+                </div>
+            </div>
 
-                <label for="phone">Téléphone :</label>
-                <input type="tel" id="phone" name="phone" required>
+            <div class="faq-item">
+                <button class="faq-question-btn">3. Question 3 ?</button>
+                <div class="faq-answer">
+                    <p>Vestibulum sed ligula non arcu feugiat ultrices. Duis fermentum ultrices urna, at feugiat tortor bibendum id.</p>
+                </div>
+            </div>
 
-                <label for="date">Date :</label>
-                <input type="date" id="date" name="date" required>
+            <div class="faq-item">
+                <button class="faq-question-btn">4. Question 4 ?</button>
+                <div class="faq-answer">
+                    <p>Vestibulum sed ligula non arcu feugiat ultrices. Duis fermentum ultrices urna, at feugiat tortor bibendum id.</p>
+                </div>
+            </div>
 
-                <label for="time">Heure :</label>
-                <select id="time" name="time" required>
-                    <option value="" disabled selected>Choisissez une heure</option>
-                    <option value="18:00">11:30</option>
-                    <option value="19:00">12:00</option>
-                    <option value="20:00">13:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="18:00">21:00</option>
-                    <!-- Ajoutez d'autres options selon vos disponibilités -->
-                </select>
+            <div class="faq-item">
+                <button class="faq-question-btn">5. Question 5 ?</button>
+                <div class="faq-answer">
+                    <p>Vestibulum sed ligula non arcu feugiat ultrices. Duis fermentum ultrices urna, at feugiat tortor bibendum id.</p>
+                </div>
+            </div>
 
-                <label for="guests">Nombre de convives :</label>
-                <input type="number" id="guests" name="guests" min="1" required>
+            <div class="faq-item">
+                <button class="faq-question-btn">6. Question 6 ?</button>
+                <div class="faq-answer">
+                    <p>Vestibulum sed ligula non arcu feugiat ultrices. Duis fermentum ultrices urna, at feugiat tortor bibendum id.</p>
+                </div>
+            </div>
 
-                <button type="submit">Réserver</button>
-            </form>
+            
 
-            <div id="confirmation-message" style="display: none;">
-                Merci pour votre réservation ! Votre table a bien été réservée.
+            <div class="faq-item">
+                <button class="faq-question-btn">7. Question 7 ?</button>
+                <div class="faq-answer">
+                    <p>Vestibulum sed ligula non arcu feugiat ultrices. Duis fermentum ultrices urna, at feugiat tortor bibendum id.</p>
+                </div>
             </div>
         </section>
     </div>
@@ -133,7 +146,7 @@
     </footer>
 
     <script src="../js/script.js"></script>
-    <script src="../js/reservation.js"></script>
+    <script src="../js/faq.js"></script>
     <button id="scrollTopBtn" onclick="scrollToTop()">
         <span>&#x1F680;</span>
     </button>

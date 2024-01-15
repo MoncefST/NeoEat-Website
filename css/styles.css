@@ -10,7 +10,6 @@ body {
     padding-top: 80px;
     font-family: 'Arial', sans-serif;
     background-color: #F2F2F2;
-    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -35,18 +34,6 @@ body {
     margin-left: 1cm;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
 .reserve-btn {
     background-color: #FFB039;
     padding: 10px 20px;
@@ -66,9 +53,6 @@ body {
     margin: 6px 0;
 }
 
-.nav-link:hover {
-    color: #87CEEB;
-}
 
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -93,6 +77,14 @@ body {
 
     .burger-menu {
         display: block;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 1;
     }
 }
 
@@ -179,6 +171,7 @@ p {
     width: 80%; /* largeur de la fenêtre de la vidéo */
     max-height: 400px; 
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .plats-populaires {
@@ -246,6 +239,10 @@ p {
     text-align: center;
 }
 
+.footer p {
+    color: white;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-around;
@@ -260,14 +257,14 @@ p {
     order: 1;
 }
 
-.social-icons {
+.logo-reseaux {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrez les icônes sur les petits écrans */
-    margin-top: 10px; /* Ajoutez une marge pour séparer les icônes du texte */
+    justify-content: center; /* Centrer les icônes sur les petits écrans */
+    margin-top: 10px; /* Ajouter une marge pour séparer les icônes du texte */
 }
 
-.social-icon img {
+.logo-reseaux img {
     width: 30px;
     height: 30px;
 }
@@ -282,33 +279,19 @@ p {
     margin-right: 5px;
 }
 
-/* Style pour les petits écrans */
-@media screen and (max-width: 768px) {
-    .footer-content {
-        flex-wrap: wrap;
-    }
-
-    .footer-section {
-        flex: 1;
-    }
-}
-
-
-
-
-.client-reviews {
+.client-evaluations {
     text-align: center;
     padding: 20px 0;
 }
 
-.client-review-container {
+.client-evaluation-container {
     display: flex;
     overflow-x: auto;
     justify-content: center;
     margin-top: 20px;
 }
 
-.client-review {
+.client-evaluation {
     flex: 1;
     max-width: 300px;
     margin: 10px;
@@ -319,19 +302,19 @@ p {
     padding: 15px;
 }
 
-.client-review img {
+.client-evaluation img {
     max-width: 100%;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
-.client-review p {
+.client-evaluation p {
     color: #333;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.client-review h3 {
+.client-evaluation h3 {
     margin-top: 10px;
     color: #4A305A;
 }
@@ -346,4 +329,50 @@ p {
     height: auto;
     margin-top: 20px;
     border-radius: 8px; 
+}
+
+/* MENU DROPDOWN -> Pour à propos*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFB039;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Couleur des éléments de la nav bar Accueil, Menu, À propos ... */
+.nav-links a {
+    color: white;
+    text-decoration: none; /*Enlève le soulignement hyperlink*/
+    margin: 0 15px; 
+}
+
+/* Couleur de survol de Accueil, Menu, À propos, and Contact */
+.nav-links a:hover,
+.dropdown:hover .dropdown-btn {
+    color: #FFB039;
+}
+
+/* Couleur du survol de Réserver une table, FAQ, Nos chefs, Nos fournisseurs, Nos équipes */
+.nav-link.reserve-btn:hover,
+.dropdown-content a:hover {
+    color: #4A305A;
 }
