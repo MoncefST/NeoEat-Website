@@ -1,0 +1,19 @@
+.fournisseur {
+    margin-bottom: 20px;
+}
+
+.fournisseur img {
+    max-width: 100%;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.fournisseur h3 {
+    color: #4A305A;
+}
+
+.fournisseur p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
