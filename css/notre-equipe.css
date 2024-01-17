@@ -1,0 +1,70 @@
+.equipe-section {
+    margin: 40px 0;
+}
+
+.membre-equipe {
+    margin-bottom: 40px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.membre-equipe h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.membre-equipe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px; 
+}
+
+.cv-container {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.cv-container h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.cv-link {
+    display: block;
+    background-color: #ffa319;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.cv-link:hover {
+    background-color: #9b620c;
+}
+
+.membre-equipe {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.membre-equipe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px; 
+}
+
+.membre-info {
+    flex-grow: 1;
+}
+
+.membre-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cv-container {
+    margin-bottom: 25px;
+}
