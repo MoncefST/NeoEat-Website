@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/notre-equipe.css">
-    <title>Notre Équipe - Neo Eat</title>
+    <link rel="stylesheet" href="../css/menu.css"> <!-- Ajoutez le fichier CSS spécifique pour le menu -->
+    <title>Menu - Neo Eat</title>
 </head>
-
 <body>
     <header class="navbar">
         <div class="logo">
@@ -39,58 +37,42 @@
         </div>
     </header>
 
-    <div class="content">
-        <section class="equipe-section">
-            <h2>Notre Équipe</h2>
-
-            <div class="membre-equipe">
-                <img src="../img/NotreEquipe/MoncefSTITI.png" alt="Photo de Moncef STITI">
-                <div class="membre-info">
-                    <h3>Moncef STITI</h3>
-                    <p>Rôle : PDG et Chef de projet informatique</p>
-                    <p>Expérience : 2 ans</p>
-                </div>
+    <div class="menu-category">
+        <h3>Plats Principaux</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Filet de saumon grillé</h4>
+                <img src="../img/Plat/Plat1.png" alt="Filet de saumon grillé">
+                <p>Accompagné de purée de patates douces et d'une sauce au citron.</p>
             </div>
-
-            <div class="cv-container">
-                <h4>CURRICULUM VITAE</h4>
-                <p>Vous pouvez télécharger le CV de Moncef STITI ci-dessous :</p>
-                <a class="cv-link" href="../html/CV/MoncefSTITI.html" download="MoncefSTITI_CV.html">Télécharger le CV</a>
-                <a class="cv-link" href="javascript:void(0);" onclick="printCV('../html/CV/MoncefSTITI.html');">Imprimer le CV</a>
+            <!-- Ajoutez d'autres plats ici -->
+        </div>
+    </div>
+    
+    <!-- Desserts Gastronomiques -->
+    <div class="menu-category">
+        <h3>Desserts Gastronomiques</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Fondant au chocolat noir</h4>
+                <img src="../img/Plat/Plat2.png" alt="Fondant au chocolat noir">
+                <p>Servi avec une boule de glace à la vanille et une tuile aux amandes.</p>
             </div>
-
-            <div class="membre-equipe">
-                <img src="../img/NotreEquipe/MoncefSTITI.png" alt="Photo de Moncef STITI">
-                <div class="membre-info">
-                    <h3>Marco ORFAO</h3>
-                    <p>Rôle : Cofondateur et ingénieur informatique</p>
-                    <p>Expérience : 2 ans</p>
-                </div>
+            <!-- Ajoutez d'autres desserts gastronomiques ici -->
+        </div>
+    </div>
+    
+    <!-- Menu Éphémère -->
+    <div class="menu-category">
+        <h3>Menu Éphémère</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Tartare de thon mariné</h4>
+                <img src="../img/Plat/Plat3.png" alt="Tartare de thon mariné">
+                <p>Accompagné d'avocat frais et de vinaigrette au wasabi.</p>
             </div>
-
-            <div class="cv-container">
-                <h4>CURRICULUM VITAE</h4>
-                <p>Vous pouvez télécharger le CV de Marco ORFAO ci-dessous :</p>
-                <a class="cv-link" href="../html/CV/MarcoORFAO.html" download="MarcoORFAO.html">Télécharger le CV</a>
-                <a class="cv-link" href="../html/CV/MarcoORFAO.html" onclick="window.open('../html/CV/MarcoORFAO.html', '_blank'); return false;">Imprimer le CV</a>
-            </div>
-
-            <div class="membre-equipe">
-                <img src="../img/NotreEquipe/MoncefSTITI.png" alt="Photo de Louay DARDOURI">
-                <div class="membre-info">
-                    <h3>Louay DARDOURI</h3>
-                    <p>Rôle : Cofondateur et ingénieur informatique</p>
-                    <p>Expérience : 2 ans</p>
-                </div>
-            </div>
-
-            <div class="cv-container">
-                <h4>CURRICULUM VITAE</h4>
-                <p>Vous pouvez télécharger le CV de Louay DARDOURI ci-dessous :</p>
-                <a class="cv-link" href="../html/CV/LouayDARDOURI.html" download="LouayDARDOURI.html">Télécharger le CV</a>
-                <a class="cv-link" href="../html/CV/LouayDARDOURI.html" onclick="window.open('../html/CV/LouayDARDOURI.html', '_blank'); return false;">Imprimer le CV</a>
-            </div>
-        </section>
+            <!-- Ajoutez d'autres éléments du menu éphémère ici -->
+        </div>
     </div>
 
 <footer class="footer">
@@ -147,7 +129,8 @@
     </footer>
 
     <script src="../js/script.js"></script>
-    <script src="../js/notre-equipe.js"></script>
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        <span>&#x1F680;</span>
+    </button>
 </body>
-
 </html>

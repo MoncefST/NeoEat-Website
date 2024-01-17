@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/notre-equipe.css">
-    <title>Notre Équipe - Neo Eat</title>
+    <link rel="stylesheet" href="../css/plan-du-site.css">
+    <title>Plan du site - Neo Eat</title>
 </head>
 
 <body>
+
     <header class="navbar">
         <div class="logo">
             <img src="../img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
@@ -40,60 +41,29 @@
     </header>
 
     <div class="content">
-        <section class="equipe-section">
-            <h2>Notre Équipe</h2>
-
-            <div class="membre-equipe">
-                <img src="../img/NotreEquipe/MoncefSTITI.png" alt="Photo de Moncef STITI">
-                <div class="membre-info">
-                    <h3>Moncef STITI</h3>
-                    <p>Rôle : PDG et Chef de projet informatique</p>
-                    <p>Expérience : 2 ans</p>
-                </div>
-            </div>
-
-            <div class="cv-container">
-                <h4>CURRICULUM VITAE</h4>
-                <p>Vous pouvez télécharger le CV de Moncef STITI ci-dessous :</p>
-                <a class="cv-link" href="../html/CV/MoncefSTITI.html" download="MoncefSTITI_CV.html">Télécharger le CV</a>
-                <a class="cv-link" href="javascript:void(0);" onclick="printCV('../html/CV/MoncefSTITI.html');">Imprimer le CV</a>
-            </div>
-
-            <div class="membre-equipe">
-                <img src="../img/NotreEquipe/MoncefSTITI.png" alt="Photo de Moncef STITI">
-                <div class="membre-info">
-                    <h3>Marco ORFAO</h3>
-                    <p>Rôle : Cofondateur et ingénieur informatique</p>
-                    <p>Expérience : 2 ans</p>
-                </div>
-            </div>
-
-            <div class="cv-container">
-                <h4>CURRICULUM VITAE</h4>
-                <p>Vous pouvez télécharger le CV de Marco ORFAO ci-dessous :</p>
-                <a class="cv-link" href="../html/CV/MarcoORFAO.html" download="MarcoORFAO.html">Télécharger le CV</a>
-                <a class="cv-link" href="../html/CV/MarcoORFAO.html" onclick="window.open('../html/CV/MarcoORFAO.html', '_blank'); return false;">Imprimer le CV</a>
-            </div>
-
-            <div class="membre-equipe">
-                <img src="../img/NotreEquipe/MoncefSTITI.png" alt="Photo de Louay DARDOURI">
-                <div class="membre-info">
-                    <h3>Louay DARDOURI</h3>
-                    <p>Rôle : Cofondateur et ingénieur informatique</p>
-                    <p>Expérience : 2 ans</p>
-                </div>
-            </div>
-
-            <div class="cv-container">
-                <h4>CURRICULUM VITAE</h4>
-                <p>Vous pouvez télécharger le CV de Louay DARDOURI ci-dessous :</p>
-                <a class="cv-link" href="../html/CV/LouayDARDOURI.html" download="LouayDARDOURI.html">Télécharger le CV</a>
-                <a class="cv-link" href="../html/CV/LouayDARDOURI.html" onclick="window.open('../html/CV/LouayDARDOURI.html', '_blank'); return false;">Imprimer le CV</a>
-            </div>
+        <section class="plan-du-site-section">
+            <h2>Plan du site</h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu </a></li>
+                <li>
+                    <ul>
+                        <li><a href="a-propos.html">Qui sommes-nous ?</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="nos-chefs.html">Nos chefs</a></li>
+                        <li><a href="fournisseurs.html">Nos fournisseurs</a></li>
+                        <li><a href="notre-equipe.html">Notre équipe</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html">Réserver une table</a></li>
+                <li><a href="mention-legale.html">Mentions légales</a></li>
+                <li><a href="plan-du-site.html">Plan du site</a></li>
+            </ul>
         </section>
     </div>
 
-<footer class="footer">
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Plan du site</h3>
@@ -147,7 +117,9 @@
     </footer>
 
     <script src="../js/script.js"></script>
-    <script src="../js/notre-equipe.js"></script>
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        <span>&#x1F680;</span>
+    </button>
 </body>
 
 </html>
