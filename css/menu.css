@@ -8,9 +8,60 @@ body {
     margin-bottom: 20px;
     background-color: #fff;
     padding: 15px;
+    border:solid;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.Carte {
+    border:solid;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    height:40vw;
+    max-height: 1122px;
+    width:40vw;
+    max-width : 794px;
+    background-color: #E3E3E3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Carte img {
+    border:solid;
+    width: 10vw;
+    max-height: 200px;
+    height: 10vw;
+    max-height: 200px;
+    border-radius: 8px;
+}
+
+.Carte #haut-droit {
+    float:right;
+}
+
+#haut-gauche {
+    transform: rotate(0.75turn);
+}
+
+#bas-droit {
+    transform: rotate(0.25turn);
+    top:922px;
+}
+
+#bas-gauche {
+    transform: rotate(0.5turn);
+}
+
+
+
+
+
+
+
+
+
 
 .menu-category h3 {
     font-size: 24px;
@@ -43,23 +94,4 @@ body {
 
 .menu-item p {
     color: #555;
-}
-
-.Carte {
-    margin-bottom: 20px;
-    margin-left:auto;
-    margin-right:auto;
-    height: 1122px;
-    width : 794px;
-    background-color: #E3E3E3;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.Carte img haut-droit {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px; 
 }
