@@ -4,84 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-
-        .cv-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        header h1 {
-            color: #007BFF;
-            text-align: center;
-        }
-
-        header h2 {
-            color: #007BFF;
-            text-align: center;
-        }
-
-        section {
-            margin-top: 30px;
-        }
-
-        .job h3 {
-            color: #007BFF;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .competence ul,
-        .education ul {
-            padding-left: 20px;
-            margin-bottom: 10px;
-        }
-
-        .competence p,
-        .education p {
-            margin-bottom: 10px;
-        }
-
-        ul, ol {
-            list-style-type: disc; 
-            padding: 0;
-        }
-
-        @media print {
-            body {
-                width: 21cm;
-                height: 29.7cm;
-                margin: 20mm;
-            }
-
-            .cv-container {
-                max-width: 100%;
-                margin: 0;
-                padding: 0;
-                box-shadow: none;
-                border-radius: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/CV.css"> 
     <title>CV - Louay DARDOURI</title>
 </head>
 
 <body>
     <div class="cv-container">
         <header>
+            <button class="print-button" onclick="window.print()">Imprimer le CV</button>
             <h1>Louay DARDOURI</h1>
         </header>
 
