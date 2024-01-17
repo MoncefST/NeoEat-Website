@@ -1,1 +1,163 @@
-/*enlever les trucs supplémentaires dans styles.css de index.html et les mettre ici */
+
+.client-evaluations {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.client-evaluation-container {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.client-evaluation {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.client-evaluation img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.client-evaluation p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.client-evaluation h3 {
+    margin-top: 10px;
+    color: #4A305A;
+}
+
+.evaluation {
+    color: #FFB039;
+    font-size: 18px;
+}
+
+.restaurant-tables {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px; 
+}
+
+.container {
+    position: relative;
+    margin-bottom: 120px; 
+}
+
+.bienvenue-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bienvenue-video {
+    width: 80%; /* largeur de la fenêtre de la vidéo */
+    max-height: 400px; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.plats-populaires {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.plat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plat {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.plat img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plat h3 {
+    margin-top: 10px;
+    color: #4A305A;
+}
+
+.plat p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.chef-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.chef-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chef {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.chef img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.chef h3 {
+    margin-top: 10px;
+    color: #4A305A;
+}
+
+.chef p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.voir-plus {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.voir-plus a.voir-plus-btn {
+    display: inline-block;
+    background-color: #FFB039;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
