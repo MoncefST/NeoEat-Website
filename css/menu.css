@@ -44,3 +44,22 @@ body {
 .menu-item p {
     color: #555;
 }
+
+.Carte {
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 1122px;
+    width : 794px;
+    background-color: #E3E3E3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Carte img haut-droit {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px; 
+}
