@@ -8,18 +8,31 @@
     text-align: center;
 }
 
-.chef-item img {
+
+.chef-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chef {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.chef img {
     max-width: 100%;
-    border-radius: 50%;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.chef-item h2 {
+.chef h3 {
+    margin-top: 10px;
     color: #4A305A;
-}
-
-.chef-item p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
 }

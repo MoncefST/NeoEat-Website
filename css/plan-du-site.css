@@ -6,16 +6,16 @@
 .plan-du-site-section h2 {
     color: #1a1a1a;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .plan-du-site-section ul {
-    list-style-type: disc; 
+    list-style-type: disc;
     padding: 0;
 }
 
 .plan-du-site-section li {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Ajout de marge en bas de chaque élément de la liste */
 }
 
 .plan-du-site-section a {
