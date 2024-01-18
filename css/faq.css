@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.faq-item {
+.faq-element {
     margin-bottom: 20px;
 }
 
@@ -20,7 +20,7 @@
     font-size: large;
 }
 
-.faq-answer {
+.faq-reponse {
     display: none;
     padding: 10px;
     border: 1px solid #ccc;
@@ -28,11 +28,11 @@
     margin-top: 10px;
 }
 
-.faq-answer p {
+.faq-reponse p {
     margin: 0;
 }
 
-.faq-item.active .faq-question-btn {
+.faq-element.active .faq-question-btn {
     background-color: #4A305A;
 }
 

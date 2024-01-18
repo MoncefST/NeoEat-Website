@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const faqItems = document.querySelectorAll('.faq-item');
+    const faqelements = document.querySelectorAll('.faq-element');
 
-    faqItems.forEach(item => {
-        const questionBtn = item.querySelector('.faq-question-btn');
+    faqelements.forEach(element => {
+        const questionBtn = element.querySelector('.faq-question-btn');
 
         questionBtn.addEventListener('click', () => {
             // Ferme toutes les autres réponses
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                    otherItem.querySelector('.faq-answer').style.display = 'none';
+            faqelements.forEach(otherelement => {
+                if (otherelement !== element) {
+                    otherelement.classList.remove('active');
+                    otherelement.querySelector('.faq-reponse').style.display = 'none';
                 }
             });
 
             // Affiche ou masque la réponse de la question actuelle
-            item.classList.toggle('active');
-            const answer = item.querySelector('.faq-answer');
-            answer.style.display = item.classList.contains('active') ? 'block' : 'none';
+            element.classList.toggle('active');
+            const reponse = element.querySelector('.faq-reponse');
+            reponse.style.display = element.classList.contains('active') ? 'block' : 'none';
         });
     });
 });

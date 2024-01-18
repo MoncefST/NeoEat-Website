@@ -7,11 +7,8 @@ require 'PHP/fichier/php/PHP/PHPMailer/src/Exception.php';
 require 'PHP/fichier/php/PHP/PHPMailer/src/PHPMailer.php';
 require 'PHP/fichier/php/PHP/PHPMailer/src/SMTP.php';
 
-
-
 // Vérifier si les données du formulaire sont présentes
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone']) && isset($_POST['date']) && isset($_POST['time']) && isset($_POST['guests'])) {
-
     // Créer une instance de PHPMailer
     $mail = new PHPMailer(true);
     $mail->CharSet = "UTF-8";
@@ -33,8 +30,22 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone']) &&
 
         // Contenu du message
         $mail->isHTML(true);
+
+        // Salutation personnalisée
+        $salutation = "Bonjour {$_POST['name']},";
+
+        // Informations à ajouter au message
+        $reservationInfo = "
+            <p>{$salutation}</p>
+            <p>Merci pour votre réservation ! Votre table a bien été réservée.</p>
+            <p>Date de réservation : {$_POST['date']}</p>
+            <p>Heure de réservation : {$_POST['time']}</p>
+            <p>Nombre de convives : {$_POST['guests']}</p>
+            <p>Adresse du restaurant : Champ de Mars, 5 Av. Anatole France, 75007 Paris</p>
+        ";
+
         $mail->Subject = 'Confirmation de réservation';
-        $mail->Body    = 'Merci pour votre réservation ! Votre table a bien été réservée.';
+        $mail->Body    = $reservationInfo;
 
         // Envoyer le message
         $mail->send();

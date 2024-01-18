@@ -1,13 +1,13 @@
-.about-section {
+.a-propos-section {
     text-align: justify;
     margin-top: 20px;
 }
 
-.about-section p {
+.a-propos-section p {
     margin-bottom: 20px;
 }
 
-.about-section img {
+.a-propos-section img {
     max-width: 100%;
     border-radius: 8px;
     margin-top: 10px;
