@@ -1,5 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
+    font-size: 15px;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -18,6 +19,7 @@ header h1,
 header h2 {
     color: #007BFF;
     text-align: center;
+    margin-top: 0px;
 }
 
 section {
@@ -62,9 +64,9 @@ ul, ol {
 
 @media print {
     body {
-        width: 21cm;
-        height: 29.7cm;
-        margin: 20mm;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .cv-container {
