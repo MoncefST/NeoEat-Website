@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Logo/logo-tab.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Neo Eat</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <div class="dropdown">
+                <a class="dropdown-btn">À propos <i class="ri-arrow-down-s-line"></i></a>
+                <div class="dropdown-content">
+                    <a href="a-propos.html">Qui sommes-nous ?</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="nos-chefs.html">Nos chefs</a>
+                    <a href="fournisseurs.html">Nos fournisseurs</a>
+                    <a href="notre-equipe.html">Notre équipe</a>
+                </div>
+            </div>
+            <a href="html/contact.html" class="nav-link">Contact</a>
+            <a href="html/reservation.html" class="nav-link reserve-btn">Réserver une table</a>
+        </nav>
+        
+        <!-- BARRE DU MENU BURGER -->
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- Vidéo et message de bienvenue -->
+        <section class="bienvenue-section">
+            <video controls autoplay class="bienvenue-video">
+                <source src="video/VideoExplicationConcept.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas les vidéos.
+            </video>
+        </section>
+        <section class="restaurant-context">
+            <h2>Bienvenue chez Neo Eat !</h2>
+            <p>
+            Neo Eat, où la créativité des chefs étoilés s'unit à la précision de la technologie. Nos chefs renommés imaginent des recettes exceptionnelles, harmonisant saveurs raffinées et innovations culinaires. Dans nos cuisines, des robots de pointe, guidés par ces recettes d'exception, assurent une expérience gastronomique unique.
+            <br>Découvrez l'alliance parfaite entre l'art culinaire humain et la précision technologique des robots. Vous avez la chance de voir ces machines à l'œuvre, créant vos plats sous vos yeux. Laissez-vous séduire par cette fusion unique de talent culinaire et d'innovation. Chez Neo Eat, chaque plat est une expérience mémorable, alliant la passion des chefs au futur de la cuisine.
+            </p>
+            <img src="img/Restaurant/tables.png" alt="Tables du restaurant" class="restaurant-tables">
+        </section>
+
+        <!-- Section des chefs -->
+        <section class="chef-section">
+            <h2>Nos créateurs culinaires</h2>
+            <div class="chef-container">
+                <div class="chef">
+                    <h3>Philippe Etchebest</h3>
+                    <img src="img/ChefCuisto/Etchebest.png" alt="Chef Philippe Etchebest">
+                    <p>Rencontrez notre chef étoilé, Philippe Etchebest, passionné de cuisine depuis toujours.</p>
+                </div>
+
+                <div class="chef">
+                    <h3>Cyril Lignac</h3>
+                    <img src="img/ChefCuisto/CyrilLignac.jpg" alt="Chef Cyril Lignac">
+                    <p>Découvrez les créations innovantes de notre chef renommé, Cyril Lignac.</p>
+                </div>
+
+                <div class="chef">
+                    <h3>Gordon Ramsay</h3>
+                    <img src="img/ChefCuisto/GordonRamsay.jpg" alt="Chef Gordon Ramsay">
+                    <p>Savourez des plats exquis préparés par le célèbre chef Gordon Ramsay.</p>
+                </div>
+
+                <div class="chef">
+                    <h3>Thierry Marx</h3>
+                    <img src="img/ChefCuisto/ThierryMarx.jpg" alt="Chef Thierry Marx">
+                    <p>Explorez le monde culinaire unique conçu par le chef étoilé Thierry Marx.</p>
+                </div>
+            </div>
+            <div class="voir-plus">
+                <a href="nos-chefs.html" class="voir-plus-btn">Voir plus de chefs</a>
+            </div>
+        </section>
+
+        <section class="plats-populaires">
+            <h2>Nos plats les plus populaires</h2>
+            <div class="plat-container">
+                <div class="plat">
+                    <h3>Filet de bar et courgette</h3>
+                    <img src="img/Plat/Plat1.png" alt="Plat 1">
+                    <p>Filet de bar et son bonbon de Pélardon au pistou sur son nid de spaghetti de courgette.</p>
+                </div>
+        
+                <div class="plat">
+                    <h3>Raviole de champignons</h3>
+                    <img src="img/Plat/Plat2.png" alt="Plat 2">
+                    <p>Une raviole de champignons accompagnée de foie gras poêlé et d'une délicieuse sauce crémeuse aux champignons.</p>
+                </div>
+        
+                <div class="plat">
+                    <h3>Burger Ritz</h3>
+                    <img src="img/Plat/Plat3.png" alt="Plat 3">
+                    <p>Burger Ritz accompagné de frites croustillantes et d'une sauce maison secrète.</p>
+                </div>
+            </div>
+            <div class="voir-plus">
+                <a href="html/menu.html" class="voir-plus-btn">Voir plus de plats</a>
+            </div>
+        </section>
+
+        <!-- Section des avis clients -->
+        <section class="client-evaluations">
+            <h2>Avis de nos clients</h2>
+            <div class="client-evaluation-container">
+                <div class="client-evaluation">
+                    <img src="img/Avis_clients/client1.png" alt="Client 1">
+                    <h3>Marie Dubois</h3>
+                    <p>
+                        "Délicieux ! J'ai adoré chaque bouchée. Une expérience culinaire exceptionnelle."
+                        <br>
+                        <span class="evaluation">★★★★★</span>
+                    </p>
+                </div>
+                <div class="client-evaluation">
+                    <img src="img/Avis_clients/client2.png" alt="Client 2">
+                    <h3>Lucas Martin</h3>
+                    <p>
+                        "Le service était impeccable, et les plats étaient à la hauteur de mes attentes. Bravo Neo Eat !"
+                        <br>
+                        <span class="evaluation">★★★★★</span>
+                    </p>
+                </div>
+                <div class="client-evaluation">
+                    <img src="img/Avis_clients/client3.png" alt="Client 3">
+                    <h3>Sophie Leroux</h3>
+                    <p>
+                        "Une explosion de saveurs dans chaque plat. Certainement l'un des meilleurs restaurants de la ville."
+                        <br>
+                        <span class="evaluation">★★★★★</span>
+                    </p>
+                </div>
+            </div>
+            <div class="voir-plus">
+                <a href="https://www.tripadvisor.com/neoeat/" class="voir-plus-btn">Voir plus d'évaluations</a>
+            </div>
+        </section>
+    </div>
+
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <a href="plan-du-site.html">Consulter le plan du site</a>
+            </div>
+            <div class="footer-section">
+                <h3>Mentions légales</h3>
+                <a href="mention-legal.html">Consulter nos mentions légales</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email : <a href="mailto:neoeat.sav@gmail.com">neoeat.sav@gmail.com</a></p>
+                <p>
+                <p>Téléphone : <a href="tel:+33175489632">+33 01 75 48 96 32</a></p>
+            </div>
+            <div class="footer-section horizontally-aligned">
+                <h3>Réseaux sociaux</h3>
+                <div class="logo-reseaux">
+                    <p>
+                        <a href="https://www.instagram.com/neoeat75/" target="_blank" class="social-icon">
+                            <img src="img/RéseauxSociaux/Instagram.png" alt="Logo Instagram">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/neoeat75/" target="_blank" class="social-icon">
+                            <img src="img/RéseauxSociaux/Facebook.png" alt="Logo Facebook">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.X.com/neoeat75/" target="_blank" class="social-icon">
+                            <img src="img/RéseauxSociaux/X.png" alt="Logo X">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCNSi53sTJ7LYqgonJ4CfCCQ" target="_blank" class="social-icon">
+                            <img src="img/RéseauxSociaux/Youtube.png" alt="Logo Youtube">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.TripAdvisor.com/neoeat/" target="_blank" class="social-icon">
+                            <img src="img/RéseauxSociaux/Tripadvisor.png" alt="TripAdvisor">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-signature">
+            <img src="img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
+            <p>&copy; 2024 Neo Eat. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        <span>&#8593;</span>
+    </button>
+</body>
+</html>

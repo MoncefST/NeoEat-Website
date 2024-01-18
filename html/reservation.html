@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Logo/logo-tab.ico">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reservation.css">
     <title>Réserver une table - Neo Eat</title>
@@ -13,7 +14,7 @@
             <img src="../img/Logo/LogoNeoEat.png" alt="Neo Eat Logo">
         </div>
         <nav class="nav-links">
-            <a href="index.html">Accueil</a>
+            <a href="../index.html">Accueil</a>
             <a href="menu.html">Menu</a>
             <div class="dropdown">
                 <a class="dropdown-btn">À propos <i class="ri-arrow-down-s-line"></i></a>
@@ -54,7 +55,7 @@
                 <input type="tel" id="phone" name="phone" required>
             
                 <label for="date">Date :</label>
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="date" name="date" min="<?= date('Y-m-d') ?>" required>
             
                 <label for="time">Heure :</label>
                 <select id="time" name="time" required>
@@ -69,7 +70,7 @@
                 </select>
             
                 <label for="guests">Nombre de convives :</label>
-                <input type="number" id="guests" name="guests" min="1" required>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
             
                 <button type="submit">Réserver</button>
             </form>
@@ -131,8 +132,10 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/reservation.js"></script>
     <button id="scrollTopBtn" onclick="scrollToTop()">
-        <span>&#x1F680;</span>
+        <span>&#8593;</span>
     </button>
+
 </body>
 </html>
