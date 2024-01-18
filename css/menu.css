@@ -41,12 +41,17 @@
     color: #1a1a1a;
 }
 
+.menu-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
 .menu-element {
-    margin-bottom: 25px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.33% - 20px); /* 33.33% pour afficher trois éléments par ligne avec une marge de 20px entre eux */
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .menu-element img {
@@ -55,22 +60,38 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
 }
 
 .menu-element h4 {
     font-size: 22px;
     color: #333;
     margin-bottom: 10px;
+    margin: 0 auto; 
 }
 
 .menu-element p {
     font-size: 16px;
     line-height: 1.5;
+    margin: 0 auto; 
 }
 
 .prix {
     font-weight: bold;
     color: #ff8c00;
-    font-size: 18px; /* Taille de police plus grande pour une meilleure visibilité */
-    margin-top: 8px; /* Espacement du prix par rapport à la description */
+    font-size: 18px; 
+    margin-top: 8px; 
+    margin: 0 auto; 
 }
+
+
+@media only screen and (max-width: 767px) {
+    .menu-elements {
+        flex-direction: column; /* Afficher les éléments en colonne sur les petits écrans */
+    }
+
+    .menu-element {
+        width: 100%; 
+    }
+}
+
