@@ -1,11 +1,12 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-require 'phpmailer/Exception.php';
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
+require 'PHP/fichier/php/PHP/PHPMailer/src/Exception.php';
+require 'PHP/fichier/php/PHP/PHPMailer/src/PHPMailer.php';
+require 'PHP/fichier/php/PHP/PHPMailer/src/SMTP.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
@@ -29,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         $mail->isHTML(false);
-        $mail->Subject = 'Contact Form Submission';
+        $mail->Subject = 'Nouveau message client !';
         $mail->Body = "Name: $name\nEmail: $email\nMessage:\n$message";
 
 
