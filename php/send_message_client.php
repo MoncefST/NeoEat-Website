@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'neoeat.sav@gmail.com';
-        $mail->Password   = 'zann afaj cnus tifc'; 
+        $mail->Password   = 'RAJOUTER MOT DE PASSE'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
