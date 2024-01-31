@@ -22,7 +22,13 @@ Bienvenue sur le dépôt du site web de Neo Eat, le premier restaurant entièrem
 
 ## Du PHP ? Mais pourquoi ?
 
-Le site de Neo Eat répond aux exigences minimales énoncées par le professeur. Voici un aperçu des principales fonctionnalités :
+Le site de Neo Eat répond aux exigences minimales énoncées par le professeur mais aussi de fonctionnalités supplémentaire. Voici un aperçu des principales fonctionnalités :
 
 - **Confirmation par Email :** Le site envoie des emails aux clients pour confirmer leurs réservations, utilisant le protocole SMTP de Google avec PHPMailer.
 - **Contacter le restaurant via un formulaire :** Les clients peuvent envoyer des messages que nous recevrons ensuite sur notre adresse e-mail.
+
+# Note obtenue : 
+
+- Développement web : 20/20
+- Expression et communication (Présentation orale et contenue du site web) : 19/20
+  
