@@ -20,7 +20,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone']) &&
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'neoeat.sav@gmail.com';
-        $mail->Password   = 'zann afaj cnus tifc'; 
+        $mail->Password   = ''; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
