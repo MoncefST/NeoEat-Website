@@ -5,12 +5,8 @@ Bienvenue sur le dépôt du site web de Neo Eat, le premier restaurant entièrem
 ## Informations du Projet
 
 - **Site Web :** [Neo Eat - dwarves.iut-fbleau.fr](https://dwarves.iut-fbleau.fr/~stiti/)
-- **Dépôt Git :** [GitHub - SAE_S1.05_S1.06](https://dwarves.iut-fbleau.fr/gitiut/stiti/SAE_S1.05_S1.06.git)
+- **Dépôt GitTea scolaire :** [GitHub - SAE_S1.05_S1.06](https://dwarves.iut-fbleau.fr/gitiut/stiti/SAE_S1.05_S1.06.git)
 
-## Membres de l'Équipe
-- Moncef STITI @stiti
-- Marco ORFAO @orfao
-- Louay DARDOURI @dardouri
 
 ## Structure du Projet
 
