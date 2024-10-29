@@ -4,7 +4,7 @@ Bienvenue sur le dépôt du site web de Neo Eat, le premier restaurant entièrem
 
 ## Informations du Projet
 
-- **Site Web :** [Neo Eat - dwarves.iut-fbleau.fr](https://dwarves.iut-fbleau.fr/~stiti/)
+- **Site Web :** [Neo Eat - dwarves.iut-fbleau.fr](https://dwarves.iut-fbleau.fr/~stiti/BUT1/SAE/NeoEat/)
 - **Dépôt GitTea scolaire :** [GitHub - SAE_S1.05_S1.06](https://dwarves.iut-fbleau.fr/gitiut/stiti/SAE_S1.05_S1.06.git)
 
 
